@@ -1,0 +1,39 @@
+body {
+    font-family: 'Press Start 2P';
+    
+    background-color: #080808;
+    color: #F0F0F0;
+    height: 100%;
+    margin: 0 auto;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    cursor: url('/img/cursor.png'), url(/img/cursor.cur), auto;
+}
+.center {
+    text-align: center;
+}
+.name {
+    background-color: #0a0a0a;
+    border: 10px white solid;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    
+    font-size: 40px;
+}
+.faded-out {
+    opacity: 0.5;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

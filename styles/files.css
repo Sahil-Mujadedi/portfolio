@@ -1,0 +1,30 @@
+img {
+    width: 200px;
+    height: 100px;
+    border: 3px white solid;
+    
+}
+.file {
+    border: 5px white solid; 
+    margin-top: 20px;
+    margin: 10px;
+    padding: 20px;
+    animation: fadein 1s linear;
+}
+.file:hover {
+    background-color: #1d1d1d;
+}
+#file_1 {
+    margin-top: 40px;
+}
+.filename {
+    font-size: 50px;
+    display: inline;
+}
+p {
+    display: inline;
+}
+.description {
+    text-decoration: underline;
+}
+

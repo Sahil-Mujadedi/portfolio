@@ -1,0 +1,22 @@
+.faq {
+    text-align: center;
+}
+body {
+    margin: 20px;
+    animation: fadein 5s linear;
+}
+.question {
+    border: 5px white solid;
+    margin: 10px;
+    line-height: 2;
+}
+.highlight_yellow {
+    background-color: yellow;
+    color: black;
+}
+.highlight_red {
+    background-color: red;
+}
+.highlight_blue {
+    background-color: blue;
+}

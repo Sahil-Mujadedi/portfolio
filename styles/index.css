@@ -1,0 +1,58 @@
+body {
+    background-color: #080808;
+    color: #F0F0F0;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.name {
+    background-color: #0a0a0a;
+    border: 10px white solid;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    
+    font-size: 40px;
+}
+
+.buttonWrapper {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.startButton {
+    margin-top: 10%;
+}
+
+
+.btn {
+    position: relative;
+    margin: 0;
+    font-size: xx-large;
+    border: 5px white solid;
+    padding: 30px;
+}
+.btn:hover {
+    background-color: #1d1d1d;
+    transform: translateY(-10px);
+}
+.btn-nohover {
+    position: relative;
+    margin: 0;
+    font-size: xx-large;
+    border: 5px white solid;
+    padding: 30px;
+}
+
+@keyframes slideleft {
+    0% {
+        right: 0px;
+        opacity: 1;
+    }
+    100% {
+        right: 100vw;
+        opacity: 0;
+    }
+}
