@@ -3,7 +3,7 @@
 }
 body {
     margin: 20px;
-    animation: fadein 5s linear;
+    animation: fadein 2s ease-out;
 }
 .question {
     border: 5px white solid;
