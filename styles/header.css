@@ -1,6 +1,5 @@
 body {
     font-family: 'Press Start 2P';
-    
     background-color: #080808;
     color: #F0F0F0;
     height: 100%;
@@ -35,5 +34,13 @@ html, body {
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
