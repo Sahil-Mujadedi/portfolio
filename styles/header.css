@@ -28,6 +28,27 @@ html, body {
     opacity: 0.5;
 }
 
+/* button styles */
+.btn {
+    position: relative;
+    margin: 0;
+    font-size: xx-large;
+    border: 5px white solid;
+    padding: 30px;
+    transition: 0.1s;
+}
+.btn:hover {
+    background-color: #1d1d1d;
+    transform: scale(1.1);
+}
+.btn-nohover {
+    position: relative;
+    margin: 0;
+    font-size: xx-large;
+    border: 5px white solid;
+    padding: 30px;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;

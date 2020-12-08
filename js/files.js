@@ -1,19 +1,11 @@
-document.getElementById('start').addEventListener("click", function() {
-    fadeout("about", "start", "newGame");
-    document.getElementById("start").innerText = "Loading...";
+document.getElementById('backbutton').addEventListener("click", function() {
+    fadeout("container");
     setTimeout(function() {
-        location.assign("files.html");
+        location.assign("index.html");
     }, 600);
 });
 
-document.getElementById('about').addEventListener("click", function(){
-    fadeout("about", "start", "newGame");
-    fadeout("name-wrapper");
-    document.getElementById("about").innerText = "Loading...";
-    setTimeout(function() {
-        location.assign("about.html");
-    }, 600);
-})
+
 
 // function to slide the buttons to the left and delete them
 function fadeout(id1, id2 = null, id3 = null) {

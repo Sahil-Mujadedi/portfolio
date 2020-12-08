@@ -47,7 +47,3 @@ body {
     padding: 30px;
 }
 
-@keyframes twirl {
-    from { transform: translateX(0deg) }
-    to { transform: translateX(90deg) }
-}
