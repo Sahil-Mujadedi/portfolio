@@ -15,7 +15,7 @@ document.getElementById('about').addEventListener("click", function(){
     }, 600);
 });
 
-// function to slide the buttons to the left and delete them
+// function to fade out the buttons
 function fadeout(id1, id2 = null, id3 = null) {
     document.getElementById(id1).style = "animation: fadeout 0.4s ease-in";
     
