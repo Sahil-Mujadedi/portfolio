@@ -49,6 +49,21 @@ html, body {
     padding: 30px;
 }
 
+.backToHome {
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    z-index: 1;
+    background-color: #080808;
+    opacity: 0.3;
+}
+.backToHome:hover {
+    opacity: 1;
+}
+
+
 @keyframes fadein {
     from {
         opacity: 0;
