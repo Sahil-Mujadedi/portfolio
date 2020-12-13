@@ -23,7 +23,7 @@ img {
     padding: 20px;
     background-color: #080808;
     line-height: 0;
-    transition-duration: 0.2s;
+    transition: 0.2s linear;
 }
 .file:hover {
     background-color: #1d1d1d;
