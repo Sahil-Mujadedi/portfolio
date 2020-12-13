@@ -7,45 +7,36 @@ body {
 }
 
 img {
-    width: 200px;
-    height: 100px;
+    height: 150px;
     border: 3px white solid;
-    
+    grid-area: preview;
 }
 .file {
+    display: grid;
+    grid-template-areas:
+    'preview filename'
+    'preview description';
+    grid-gap: 0;
     border: 5px white solid; 
     margin-top: 20px;
     margin: 10px;
     padding: 20px;
     background-color: #080808;
-    
+    line-height: 0;
+    transition-duration: 0.2s;
 }
 .file:hover {
     background-color: #1d1d1d;
+    transform: scale(1.01);
 }
 #file_1 {
     margin-top: 40px;
 }
 .filename {
     font-size: 50px;
-    display: inline;
-}
-p {
-    display: inline;
+    grid-area: filename;
 }
 .description {
     text-decoration: underline;
-}
-.backToHome {
-    position: fixed;
-    left: 20px;
-    bottom: 10px;
-    font-size: 20px;
-    padding: 10px;
-    z-index: 1;
-    background-color: #080808;
-    opacity: 0.6;
-}
-.backToHome:hover {
-    opacity: 1;
+    grid-area: description;
 }
