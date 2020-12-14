@@ -9,7 +9,7 @@ body {
 html, body {
     margin: 0;
     height: 100%;
-    cursor: url('img/cursor.png'), auto;
+    cursor: url('/img/cursor.png'), auto;
 }
 .center {
     text-align: center;
