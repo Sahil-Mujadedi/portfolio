@@ -1,4 +1,4 @@
-// function to fade out the page
+// Function to fade out the page
 function fadeout(id1, id2 = null, id3 = null) {
     document.getElementById(id1).style = "animation: fadeout 0.4s ease-in";
     
