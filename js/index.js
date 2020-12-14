@@ -6,6 +6,7 @@ document.getElementById('start').addEventListener("click", function() {
     }, 600);
 });
 
+// Event listener to listen for click on the "about" button
 document.getElementById('about').addEventListener("click", function(){
     fadeout("about", "start", "newGame");
     fadeout("name-wrapper");
