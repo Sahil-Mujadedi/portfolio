@@ -1,22 +1,4 @@
-document.getElementById('start').addEventListener("click", function() {
-    fadeout("about", "start", "newGame");
-    document.getElementById("start").innerText = "Loading...";
-    setTimeout(function() {
-        location.assign("files.html");
-    }, 600);
-});
-
-// Event listener to listen for click in the "about" button
-document.getElementById('about').addEventListener("click", function(){
-    fadeout("about", "start", "newGame");
-    fadeout("name-wrapper");
-    document.getElementById("about").innerText = "Loading...";
-    setTimeout(function() {
-        location.assign("about.html");
-    }, 600);
-});
-
-// function to fade out the buttons
+// Function to fade out the page
 function fadeout(id1, id2 = null, id3 = null) {
     document.getElementById(id1).style = "animation: fadeout 0.4s ease-in";
     
@@ -38,5 +20,36 @@ function fadeout(id1, id2 = null, id3 = null) {
             document.getElementById(id3).remove()
         }, 400);
     }
+}
 
+if (document.getElementById('start')) {
+    document.getElementById('start').addEventListener("click", function() {
+        fadeout("about", "start", "newGame");
+        document.getElementById("start").innerText = "Loading...";
+        setTimeout(function() {
+            location.assign("files.html");
+        }, 400);
+    });
+}
+
+
+// Event listener to listen for click in the "about" button
+if (document.getElementById('about')) {
+    document.getElementById('about').addEventListener("click", function(){
+        fadeout("about", "start", "newGame");
+        fadeout("name-wrapper");
+        document.getElementById("about").innerText = "Loading...";
+        setTimeout(function() {
+            location.assign("about.html");
+        }, 400);
+    });
+}
+
+if (document.getElementById('backbutton')) {
+    document.getElementById('backbutton').addEventListener("click", function() {
+        fadeout("container");
+        setTimeout(function() {
+            location.assign("index.html");
+        }, 400);
+    });
 }
