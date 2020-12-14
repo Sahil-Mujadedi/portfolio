@@ -14,12 +14,12 @@ img {
 .file {
     display: grid;
     grid-template-areas:
-    'preview filename'
-    'preview description';
+    'preview filename filename filename filename'
+    'preview description description description description';
     grid-gap: 0;
     border: 5px white solid; 
     margin-top: 20px;
-    margin: 10px;
+    margin: 2%;
     padding: 20px;
     background-color: #080808;
     line-height: 0;
@@ -35,8 +35,10 @@ img {
 .filename {
     font-size: 50px;
     grid-area: filename;
+    justify-self: center;
 }
 .description {
     text-decoration: underline;
     grid-area: description;
+    justify-self: center;
 }
