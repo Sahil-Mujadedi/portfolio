@@ -1,5 +1,10 @@
 body {
     margin: 0 auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #container {
@@ -23,11 +28,11 @@ img {
     padding: 20px;
     background-color: #080808;
     line-height: 0;
-    transition: 0.2s linear;
+    transition: 0.1s;
 }
 .file:hover {
     background-color: #1d1d1d;
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 #file_1 {
     margin-top: 40px;
