@@ -57,7 +57,7 @@ html, body {
     padding: 10px;
     z-index: 1;
     background-color: #080808;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 .backToHome:hover {
     opacity: 1;
