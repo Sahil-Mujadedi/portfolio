@@ -1,10 +1,6 @@
 body {
     margin: 0 auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-body::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
 }
 
 #container {
@@ -23,7 +19,6 @@ img {
     'preview description description description description';
     grid-gap: 0;
     border: 5px white solid; 
-    margin-top: 20px;
     margin: 2%;
     padding: 20px;
     background-color: #080808;
@@ -46,4 +41,15 @@ img {
     text-decoration: underline;
     grid-area: description;
     justify-self: center;
+}
+.pagination-buttons {
+    position: absolute;
+    margin: 0;
+    right: 20px;
+    bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+#left-page {
+    right: 100px;
 }
