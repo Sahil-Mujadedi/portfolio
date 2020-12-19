@@ -15,6 +15,7 @@ function fadeout(id1, id2 = null, id3 = null) {
 if (document.getElementById('start')) {
     document.getElementById('start').addEventListener("click", function() {
         fadeout("about", "start", "newGame");
+        fadeout("background")
         document.getElementById("start").innerText = "Loading...";
         setTimeout(function() {
             location.assign(`files.html`);
@@ -26,7 +27,7 @@ if (document.getElementById('start')) {
 if (document.getElementById('about')) {
     document.getElementById('about').addEventListener("click", function(){
         fadeout("about", "start", "newGame");
-        fadeout("name-wrapper");
+        fadeout("name-wrapper", "background");
         document.getElementById("about").innerText = "Loading...";
         setTimeout(function() {
             location.assign(`about.html`);

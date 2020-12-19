@@ -49,4 +49,12 @@ body {
     border: 5px white solid;
     padding: 30px;
 }
-
+#background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation: fadein 0.25s linear backwards;
+}
